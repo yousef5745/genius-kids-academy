@@ -36,3 +36,8 @@ When an ad runs: game audio/timer pause (`adBusy`), then resume. Uses YouTube `r
 - **Title:** Genius Kids Academy
 - **Description:** Learn ABCs, numbers, science & logic with Leo & friends! Trace letters, spell words, collect cards & daily trophies. Bright, safe fun for ages 4–8.
 - **Genres:** Educational, Kids
+
+## Audio (v1.1)
+- Voice: Microsoft Edge neural **en-US-AvaNeural** (rate −8%), 318 pre-recorded clips (`gen_voice.py`), trimmed + loudness-normalized, mono 24 kHz 40 kbps MP3, embedded base64 (offline). Phrases are matched/chained at runtime (`phrases.js` lists every spoken string).
+- Music: offline-rendered music-box lullaby (`gen_music.py`), 70 BPM, 27 s seamless loop, −24.9 LUFS, soft reverb + low-pass; ducks under voice.
+- Font: Fredoka (OFL) Latin subset, embedded woff2.
